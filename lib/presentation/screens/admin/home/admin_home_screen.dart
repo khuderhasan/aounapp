@@ -64,11 +64,10 @@ class AdminHomeScreen extends StatelessWidget {
                                         AdminProductsListScreen.routeName);
                                   },
                                   style: ButtonStyle(
-                                      backgroundColor:
-                                          MaterialStateProperty.all(
-                                              const Color.fromARGB(
-                                                  255, 93, 134, 86)),
-                                      minimumSize: MaterialStateProperty.all(
+                                      backgroundColor: WidgetStateProperty.all(
+                                          const Color.fromARGB(
+                                              255, 93, 134, 86)),
+                                      minimumSize: WidgetStateProperty.all(
                                           const Size(250, 50))),
                                   child: const Text('View Products List')))
                         ])),

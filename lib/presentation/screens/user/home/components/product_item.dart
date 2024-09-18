@@ -36,8 +36,8 @@ class ProductItem extends StatelessWidget {
           padding: const EdgeInsets.all(defaultPadding),
           child: ElevatedButton(
               style: ButtonStyle(
-                minimumSize: MaterialStateProperty.all(const Size(30, 30)),
-                backgroundColor: MaterialStateProperty.all(
+                minimumSize: WidgetStateProperty.all(const Size(30, 30)),
+                backgroundColor: WidgetStateProperty.all(
                     const Color.fromARGB(255, 30, 55, 117)),
               ),
               onPressed: () {

@@ -46,8 +46,8 @@ class PickImageBottomSheet extends StatelessWidget {
                 Navigator.of(context).pop();
               },
               style: const ButtonStyle(
-                fixedSize: MaterialStatePropertyAll(Size(100, 40)),
-                backgroundColor: MaterialStatePropertyAll(
+                fixedSize: WidgetStatePropertyAll(Size(100, 40)),
+                backgroundColor: WidgetStatePropertyAll(
                   kPrimaryColor,
                 ),
               ),

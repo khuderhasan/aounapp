@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import '../../edit_product/edit_product_screen.dart';
 
 import '../../../../cubits/products_cubit/products_cubit.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:flutter/material.dart';
 
@@ -43,8 +42,8 @@ class EditableProductItem extends StatelessWidget {
             children: [
               ElevatedButton(
                   style: ButtonStyle(
-                    minimumSize: MaterialStateProperty.all(const Size(30, 30)),
-                    backgroundColor: MaterialStateProperty.all(
+                    minimumSize: WidgetStateProperty.all(const Size(30, 30)),
+                    backgroundColor: WidgetStateProperty.all(
                         const Color.fromARGB(255, 93, 134, 86)),
                   ),
                   onPressed: () {
@@ -55,8 +54,8 @@ class EditableProductItem extends StatelessWidget {
                   child: const Text('Edit')),
               ElevatedButton(
                   style: ButtonStyle(
-                    minimumSize: MaterialStateProperty.all(const Size(30, 30)),
-                    backgroundColor: MaterialStateProperty.all(Colors.red),
+                    minimumSize: WidgetStateProperty.all(const Size(30, 30)),
+                    backgroundColor: WidgetStateProperty.all(Colors.red),
                   ),
                   onPressed: () async {
                     await context.read<ProductsCubit>().deleteProduct(

@@ -198,8 +198,8 @@ class _NewProductFormState extends State<NewProductForm> {
                     await _trySubmit();
                   },
                   style: const ButtonStyle(
-                      fixedSize: MaterialStatePropertyAll(Size(100, 40)),
-                      backgroundColor: MaterialStatePropertyAll(customGreen)),
+                      fixedSize: WidgetStatePropertyAll(Size(100, 40)),
+                      backgroundColor: WidgetStatePropertyAll(customGreen)),
                   child: BlocBuilder<ProductsCubit, ProductsState>(
                       builder: (context, state) {
                     if (state is LoadingProductsState) {

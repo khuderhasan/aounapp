@@ -199,8 +199,8 @@ class _EditProductFormState extends State<EditProductForm> {
                     await _trySubmit();
                   },
                   style: const ButtonStyle(
-                      fixedSize: MaterialStatePropertyAll(Size(100, 40)),
-                      backgroundColor: MaterialStatePropertyAll(
+                      fixedSize: WidgetStatePropertyAll(Size(100, 40)),
+                      backgroundColor: WidgetStatePropertyAll(
                           Color.fromARGB(255, 93, 134, 86))),
                   child: BlocBuilder<ProductsCubit, ProductsState>(
                       builder: (context, state) {

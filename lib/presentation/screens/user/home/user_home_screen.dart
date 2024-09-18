@@ -145,9 +145,9 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                                     .pushNamed(AllProductsScreen.routeName);
                               },
                               style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(
+                                backgroundColor: WidgetStateProperty.all(
                                     const Color.fromARGB(255, 93, 134, 86)),
-                                minimumSize: MaterialStateProperty.all(
+                                minimumSize: WidgetStateProperty.all(
                                   const Size(250, 50),
                                 ),
                               ),
